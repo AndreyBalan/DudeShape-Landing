@@ -1,0 +1,31 @@
+.header {
+    padding: 44px 0 27px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        max-width: 147px;
+    }
+    &__nav {
+        width: 472px;
+       ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       }
+        li {
+            display: inline;
+        }
+        a {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21px;
+            color: #161616;
+        }
+    }
+    &__icons {
+     width: 78px;
+     display: flex;
+     justify-content: space-between;
+    }
+}

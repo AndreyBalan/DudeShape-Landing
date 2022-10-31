@@ -1,0 +1,22 @@
+.main {
+    height: 561px;
+    width: 100%;
+    background-color: #154444;
+    display: flex;
+    color: #FFFFFF;
+    &__content {
+        padding: 100px;
+    }
+    &__heading {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 68px;
+    }
+    &__descr {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
