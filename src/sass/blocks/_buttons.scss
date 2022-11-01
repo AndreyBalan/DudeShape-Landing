@@ -1,13 +1,20 @@
 .btn {
-    margin-top: 36px;
-    font-size: 20px;
-    color: $main-color;
-    border: 1px solid #fff;
-    background: #fff;
-    padding: 13px 26px;
-    transition: 0.2s;
-    &:hover {
-        background: $main-color;
-        color: #fff;
-    }
+	margin-top: 36px;
+	font-size: 20px;
+	color: $main-color;
+	border: 1px solid #fff;
+	background: #fff;
+	padding: 13px 26px;
+	transition: 0.2s;
+	&:hover {
+		background: $main-color;
+		color: #fff;
+	}
+	&_slider {
+		margin-top: 0;
+		font-weight: 500;
+		font-size: 12px;
+		color: #FFFFFF;
+		background: #244D4D;
+	}
 }

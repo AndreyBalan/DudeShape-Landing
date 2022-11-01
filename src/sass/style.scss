@@ -11,7 +11,11 @@
 	padding: 0;
 }
 
-p, ul, li {
+body {
+	background: #FCFBFF;
+}
+
+p, ul, li, h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 0;
 }
 
@@ -27,3 +31,5 @@ p, ul, li {
 @import "blocks/buttons";
 @import "blocks/about";
 @import "blocks/titles";
+@import "blocks/popular";
+@import "blocks/slider";
