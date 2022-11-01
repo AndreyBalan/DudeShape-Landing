@@ -1,0 +1,44 @@
+.about {
+	padding: 140px 0;
+	&__companies {
+		width: 1082px;
+		margin: 0 auto;
+		margin-top: 50px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__about-us {
+		margin-top: 140px;
+		display: flex;
+	}
+	&__content {
+		padding: 46px 135px;
+	}
+	&__descr {
+		margin-top: 20px;
+		font-size: 17px;
+		line-height: 25px;
+		color: #444444;
+	}
+	&__benefits {
+		margin-top: 40px;
+		width: 376px;
+		&-item {
+			display: flex;
+			gap: 28px;
+			margin-bottom: 30px;
+		}
+	}
+	&__img {
+		position: relative;
+		&_bg {
+			position: absolute;
+			width: 631.24px;
+			height: 586.21px;
+			left: 0px;
+			top: 26px;
+			background: #DEE4E2;
+			z-index: -1;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+.title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 32px;
+	color: #242424;
+	&_about {
+		font-family: 'DM Sans';
+		color: #244D4D;
+		text-align: center;
+	}
+	&_about-us {
+		color: #244D4D;
+	}
+}
