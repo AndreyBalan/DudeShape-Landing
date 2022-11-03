@@ -30,7 +30,7 @@ function showSlides(n) {
 
 //  tabs start
 
-function openTab(evt, openTab) {
+function openTab(evt, openTabName) {
 
   let i, tabcontent, tablinks;
 
@@ -44,10 +44,12 @@ function openTab(evt, openTab) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
 
-  document.getElementById(openTab).style.display = "block";
+  document.getElementById(openTabName).style.display = "block";
   evt.currentTarget.className += " active";
+
+
 }
 
-document.querySelector("#defaultOpen").click();
-
+  document.querySelector("#defaultOpen").click();
+  
 
