@@ -2,11 +2,11 @@
 	padding: 140px 0;
 }
 
-/* Style the tab */
-.tab {
-	overflow: hidden;
-	display: flex;
-    justify-content: space-between;
+
+
+.tabs__nav {
+    display: flex;
+	justify-content: space-between;
 	width: 720px;
 	margin: 0 auto;
 	margin-top: 20px;
@@ -14,45 +14,53 @@
 	font-size: 24px;
 	line-height: 27px;
 	color: #919090;
-  }
-  
-  /* Style the buttons that are used to open the tab content */
-  .tab button {
+}
+
+.tabs__nav-btn {
 	background-color: inherit;
-	float: left;
 	border: none;
-	outline: none;
 	cursor: pointer;
 	padding: 14px 16px;
-	// transition: 0.1s;
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 27px;
 	color: #919090;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-	color: #154444;
+	&:focus {
+		outline: none;
+	}
+}
 
-  }
-  
-  /* Create an active/current tablink class */
-  .tab button.active {
-	border-bottom: 2px solid #154444;
+.tabs__nav-btn:last-child {
+    border-right: none;
+}
+
+.tabs__nav-btn:hover {
+	color: #154444;
+}
+
+.tabs__nav-btn.active {
 	color: #154444;
 	font-weight: 500;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
-	margin-top: 80px;
-	&__wrapper {
+	position: relative;
+	&:before {
+		content: "";
+		width: 57px;
+		height: 2px;
+		position: absolute;
+		background: #154444;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.tabs__content {
+    margin-top: 80px;
+	&-wrapper {
 		display: flex;
 		justify-content: space-between;
 	}
-	&__img {
-		// border: 12px solid #154444;
+	&-img {
 		padding: 12px;
 		position: relative;
 		&:before {
@@ -76,7 +84,7 @@
 			right: 0;
 		}
 	}
-	&__content {
+	&-content {
 		width: 474px;
 		display: flex;
 		justify-content: space-between;
@@ -114,14 +122,11 @@
 	}
   }
 
-  .tabcontent {
-	animation: fadeEffect 1s; /* Fading effect takes 1 second */
-  }
-  
-  /* Go from zero to full opacity */
-  @keyframes fadeEffect {
-	from {opacity: 0;}
-	to {opacity: 1;}
-  }
-  
 
+.tabs__item {
+    display: none;
+}
+
+.tabs__item.active {
+    display: block;
+}
