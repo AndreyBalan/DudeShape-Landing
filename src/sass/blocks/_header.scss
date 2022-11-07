@@ -43,8 +43,45 @@
 		}
 	}
 	&__icons {
-	 width: 78px;
-	 display: flex;
-	 justify-content: space-between;
+		width: 78px;
+		display: flex;
+		justify-content: space-between;
+		&-search {
+			form {
+				display: flex;
+				align-items: center;
+				position: relative;
+				transition: 0.4s;
+
+				&:hover {
+					input {
+						display: flex;
+					}
+				}
+				input {
+					display: none;
+					width: 200px;
+					height: 40px;
+					position: absolute;
+					left: -170px;
+					padding: 0 40px 0 10px;
+					transition: 0.4s;
+					font-size: 16px;
+					color: #BABABA;
+					// z-index: -1;
+				}
+				button {
+					border: none;
+					background: inherit;
+					color: $main-color;
+					font-size: 20px;
+					z-index: 1;
+				}
+			}
+		}
 	}
 }
+
+
+// 
+
