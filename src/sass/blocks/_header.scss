@@ -46,6 +46,7 @@
 		width: 78px;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		&-search {
 			form {
 				display: flex;
@@ -77,6 +78,30 @@
 					font-size: 20px;
 					z-index: 1;
 				}
+			}
+		}
+		&-hamburger {
+			z-index: 5;
+			position: relative;
+			width: 24px;
+			height: 16px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			cursor: pointer;
+			align-items: flex-end;
+			transition: all 0.2s;
+			span {
+				display: block;
+				width: 24px;
+				height: 3px;
+				background: $main-color;
+			}
+			span.left {
+				width: 15px;
+			}
+			span.right {
+				width: 17px;	
 			}
 		}
 	}

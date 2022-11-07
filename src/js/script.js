@@ -60,3 +60,30 @@ document.querySelector('.tabs__nav-btn').click();
 
 new WOW().init();
 
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute('href');
+
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};
+
+
+// hamburger
+
+const hamburger = document.querySelector('.hamburger'),
+	  menu = document.querySelector('.menu'),
+	  closeElem = document.querySelector('.menu__close')
+
+hamburger.addEventListener('click', () => {
+	menu.classList.add('active');
+});
+
+closeElem.addEventListener('click', () => {
+	menu.classList.remove('active');
+});
