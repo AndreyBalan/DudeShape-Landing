@@ -58,6 +58,7 @@ function onTabClick(item) {
 
 document.querySelector('.tabs__nav-btn').click();
 
+
 new WOW().init();
 
 const smoothLinks = document.querySelectorAll('a[href^="#"]');
